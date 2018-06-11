@@ -1,0 +1,21 @@
+body {
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    height: 0px;
+    widows: 0px;
+    border: 1px solid;
+    cursor: move;
+}
+
+.corner {
+    position: absolute;
+    border: 1px solid;
+    width: 9px;
+    height: 9px;
+    background-color: #ffffff;
+    cursor: pointer;
+    z-index: 99999;
+}
