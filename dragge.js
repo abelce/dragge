@@ -20,7 +20,10 @@ window.onload = (e) => {
      let operator = null; // dragging: 拖拽, creating: 创建：， scaling： 缩放, default: ‘点击空白处'
 
     document.onmousedown = (e) => {
-        e.stopPropagation();        
+        e.stopPropagation();      
+        if (e.which !== 1) {  // 左键
+            return;
+        }
         start = {
             x: e.pageX,
             y: e.pageY,
